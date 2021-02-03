@@ -1,0 +1,41 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.svn
+/.vs
+/CooperAtkins.Generic/bin
+/CooperAtkins.Generic/obj
+/CooperAtkins.Interface.Alarm/bin
+/CooperAtkins.Interface.Alarm/obj
+/CooperAtkins.Interface.NotifyCom/bin
+/CooperAtkins.Interface.NotifyCom/obj
+/CooperAtkins.NotificationBoard/bin
+/CooperAtkins.NotificationBoard/obj/x86
+/CooperAtkins.NotificationClient.Alaram/bin
+/CooperAtkins.NotificationClient.Alaram/obj/x86
+/CooperAtkins.NotificationClient.EscalationModule/bin
+/CooperAtkins.NotificationClient.EscalationModule/obj
+/CooperAtkins.NotificationClient.Generic/bin
+/CooperAtkins.NotificationClient.Generic/obj
+/CooperAtkins.NotificationClient.NotificationComposer/bin
+/CooperAtkins.NotificationClient.NotificationComposer/obj
+/CooperAtkins.NotificationClient.Service/bin
+/CooperAtkins.NotificationClient.Service/obj/x86
+/CooperAtkins.NotificationClient.Service/publish
+/CooperAtkins.NotificationEngine.Utility/bin
+/CooperAtkins.NotificationEngine.Utility/obj/x86
+/CooperAtkins.NotificationServer.NotifyEngine/bin
+/CooperAtkins.NotificationServer.NotifyEngine/obj
+/CooperAtkins.NotificationServer.Service/bin
+/CooperAtkins.NotificationServer.Service/obj/x86
+/CooperAtkins.ProtocolManager/bin
+/CooperAtkins.ProtocolManager/obj/x86
+/WindowsFormsApplication1/bin
+/WindowsFormsApplication1/obj/x86
+/CooperAtkinsNotification.suo
+/NotificationClientInstallation/Release - 5.0
+/NotificationClientInstallation/Debug - 5.0
+/NotificationClientInstallation/Debug
+/NotificationClientInstallation/Release - 5.0.zip
+/NotificationServerInstallation/Debug - 5.0

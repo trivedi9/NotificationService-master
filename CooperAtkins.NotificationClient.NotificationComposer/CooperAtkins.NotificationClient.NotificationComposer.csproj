@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{318B316A-9354-4200-8E33-5F8505BF8F89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CooperAtkins.NotificationClient.NotificationComposer</RootNamespace>
+    <AssemblyName>CooperAtkins.NotificationClient.NotificationComposer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath />
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release - 5.0|AnyCPU'">
+    <OutputPath>bin\Release - 5.0\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\CooperAtkins.NotificationClient.NotificationComposer.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug - 5.0|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug - 5.0\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\CooperAtkins.NotificationClient.NotificationComposer.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnterpriseModel.Net">
+      <HintPath>..\CooperAtkins.Generic\Libraries\EnterpriseModel.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess\DBCommands.cs" />
+    <Compile Include="DataAccess\EmailBody.cs" />
+    <Compile Include="DataAccess\NotifyEmailAddress.cs" />
+    <Compile Include="DataAccess\NotifyMobileList.cs" />
+    <Compile Include="DataAccess\NotifyMobiles.cs" />
+    <Compile Include="DataAccess\NotifyPagerAddress.cs" />
+    <Compile Include="DataAccess\NotifyPopupAddress.cs" />
+    <Compile Include="DataAccess\NotifyPopupAddressList.cs" />
+    <Compile Include="DataAccess\NotifyEmailAddressList.cs" />
+    <Compile Include="DataAccess\NotifyPagerAddressList.cs" />
+    <Compile Include="DataAccess\TTIVRNotifications.cs" />
+    <Compile Include="DigitalPagerProcessor.cs" />
+    <Compile Include="IVRProcessor.cs" />
+    <Compile Include="IVR\CDyneIVRNotificationComposer.cs" />
+    <Compile Include="IVR\DataAccess\DBCommands.cs" />
+    <Compile Include="EmailNotificationComposer.cs" />
+    <Compile Include="ErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="INotificationComposer.cs" />
+    <Compile Include="IvrClientHelper.cs" />
+    <Compile Include="IVR\IvrNotificationComposer.cs" />
+    <Compile Include="MessageBoardHelper.cs" />
+    <Compile Include="MsgBrdNotificationComposer.cs" />
+    <Compile Include="NotificationClient.cs" />
+    <Compile Include="NotificationEligibility.cs" />
+    <Compile Include="NotificationStyle.cs" />
+    <Compile Include="NotificationTypes.cs" />
+    <Compile Include="NotifyClientEnd.cs" />
+    <Compile Include="PagerNotificationComposer.cs" />
+    <Compile Include="PopupNotificationComposer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommunicationAdapter.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptNotificationComposer.cs" />
+    <Compile Include="SmsNotificationComposer.cs" />
+    <Compile Include="SmsProcessor.cs" />
+    <Compile Include="SwitchNotificationComposer.cs" />
+    <Compile Include="IVR\DataAccess\TTIVRNotifications.cs" />
+    <Compile Include="Web References\com.cdyne.ws\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CooperAtkins.Generic\CooperAtkins.Generic.csproj">
+      <Project>{9FDA42AA-C549-4F7F-BAE6-C42F714939CD}</Project>
+      <Name>CooperAtkins.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperAtkins.Interface.Alarm\CooperAtkins.Interface.Alarm.csproj">
+      <Project>{942F9D96-9CB3-49A1-88AA-D6B872775127}</Project>
+      <Name>CooperAtkins.Interface.Alarm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperAtkins.Interface.NotifyCom\CooperAtkins.Interface.NotifyCom.csproj">
+      <Project>{6B92BAC2-FA12-4E79-AEDB-9FAD993324A8}</Project>
+      <Name>CooperAtkins.Interface.NotifyCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperAtkins.NotificationClient.Generic\CooperAtkins.NotificationClient.Generic.csproj">
+      <Project>{726A584A-4780-4D5C-A055-E4C9CC03D761}</Project>
+      <Name>CooperAtkins.NotificationClient.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CooperAtkins.ProtocolManager\CooperAtkins.SocketManager.csproj">
+      <Project>{8C7AAC10-650E-4495-BF80-65D6B80F43F4}</Project>
+      <Name>CooperAtkins.SocketManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.cdyne.ws\phonenotify.wsdl" />
+    <None Include="Web References\com.cdyne.ws\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ws.cdyne.com/notifyws/phonenotify.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.cdyne.ws\</RelPath>
+      <UpdateFromURL>http://ws.cdyne.com/notifyws/phonenotify.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CooperAtkins_NotificationClient_NotificationComposer_com_cdyne_ws_PhoneNotify</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+1. MainMod.GetSensorTypeInfoObject --> AlarmHelper.GetSensorTypeInfo
+2. MainMod.isTempSensor --> AlarmHelper.IsTempSensor
+3. MainMod.isContactSensor   --> AlarmHelper.IsContactSensor
+4. MainMod.fmtMinutes  -->CooperAtkins.NotificationClient.Generic.Commom.FormatMinutes
